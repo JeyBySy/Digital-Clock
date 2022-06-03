@@ -23,7 +23,7 @@ function displayTime(data) {
     mdy.getWeek()
 }
 setInterval(function () {
-    fetch('http://worldtimeapi.org/api/timezone/Asia/Manila', {
+    fetch('https://worldtimeapi.org/api/timezone/Asia/Manila', {
         method: 'GET',
     }).then(function (res) {
         res.json()
