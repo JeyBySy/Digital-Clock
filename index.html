@@ -1,77 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Digital clock</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <center>
-      <h1>Digital clock</h1>
-    </center>
-    <div id="clock">
-      <div class="button"></div>
-      <div class="middle">
-        <div class="screen">
-          <div class="time">
-            <div class="digit">
-              <div class="d1">
-                <div class="a zero"></div>
-                <div class="b one"></div>
-                <div class="c one"></div>
-                <div class="d zero"></div>
-                <div class="e zero"></div>
-                <div class="f zero"></div>
-                <div class="g zero"></div>
-              </div>
-              <div class="d2">
-                <div class="a one"></div>
-                <div class="b one"></div>
-                <div class="c one"></div>
-                <div class="d one"></div>
-                <div class="e one"></div>
-                <div class="f one"></div>
-                <div class="g zero"></div>
-              </div>
-              <div class="colon" id="colonID">:</div>
-              <div class="d3">
-                <div class="a one"></div>
-                <div class="b one"></div>
-                <div class="c one"></div>
-                <div class="d one"></div>
-                <div class="e zero"></div>
-                <div class="f zero"></div>
-                <div class="g one"></div>
-              </div>
-              <div class="d4">
-                <div class="a one"></div>
-                <div class="b one"></div>
-                <div class="c zero"></div>
-                <div class="d one"></div>
-                <div class="e one"></div>
-                <div class="f zero"></div>
-                <div class="g one"></div>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Digital clock</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="Digit.js"></script>
+  <script src="MDY.js"></script>
+</head>
+
+<body>
+  <center>
+    <h1>Digital clock</h1>
+  </center>
+  <div id="clock">
+    <div class="button"></div>
+    <div class="middle">
+      <div class="screen">
+        <div class="time">
+          <div class="digit" id="digitID">
+            <div class="d1" data-digit="1">
+              <div class="a"></div>
+              <div class="b"></div>
+              <div class="c"></div>
+              <div class="d"></div>
+              <div class="e"></div>
+              <div class="f"></div>
+              <div class="g"></div>
+            </div>
+            <div class="d2" data-digit="2">
+              <div class="a"></div>
+              <div class="b"></div>
+              <div class="c"></div>
+              <div class="d"></div>
+              <div class="e"></div>
+              <div class="f"></div>
+              <div class="g"></div>
+            </div>
+            <div class="colon" id="colonID">:</div>
+            <div class="d3" data-digit="3">
+              <div class="a"></div>
+              <div class="b"></div>
+              <div class="c"></div>
+              <div class="d"></div>
+              <div class="e"></div>
+              <div class="f"></div>
+              <div class="g"></div>
+            </div>
+            <div class="d4" data-digit="4">
+              <div class="a"></div>
+              <div class="b"></div>
+              <div class="c"></div>
+              <div class="d"></div>
+              <div class="e"></div>
+              <div class="f"></div>
+              <div class="g"></div>
             </div>
           </div>
-          sads
-          <div class="weeks">
-            <div class="w">sun</div>
-            <div class="w today">Mon</div>
-            <div class="w">tue</div>
-            <div class="w">wed</div>
-            <div class="w">thu</div>
-            <div class="w">Fri</div>
-            <div class="w">sat</div>
-          </div>
+        </div>
+        <center>
+          <div data-date="date"></div>
+        </center>
+        <div class="weeks" data-week="week">
+          <div class="w">sun</div>
+          <div class="w">Mon</div>
+          <div class="w">tue</div>
+          <div class="w">wed</div>
+          <div class="w">thu</div>
+          <div class="w">Fri</div>
+          <div class="w">sat</div>
         </div>
       </div>
-      <div class="foot">
-        <div class="left"></div>
-        <div class="right"></div>
-      </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+    <div class="foot">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
