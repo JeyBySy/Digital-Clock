@@ -1,13 +1,6 @@
 class Digit {
     constructor(digit_place) {
         this.digit_place = digit_place
-        this.a = "a"
-        this.b = "b"
-        this.c = "c"
-        this.d = "d"
-        this.e = "e"
-        this.f = "f"
-        this.g = "g"
     }
     display(num) {
         on(this.digit_place, num)
@@ -29,7 +22,7 @@ function on(digit_place, num) {
     const d = document.querySelector(`[data-digit="${digit_place}"]`)
     const segments = d.children
 
-    for (let i = 0; i < segments.length; i++) {
+    for (let i = 0;i < segments.length;i++) {
         segments[i].classList.remove('one')
         switch (number[num][i]) {
             case 1:
